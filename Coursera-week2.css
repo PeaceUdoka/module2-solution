@@ -63,6 +63,7 @@ div.sushi {
   /* For tablets: */
   div.column {
     flex:50%;
+    margin-right:10px;
   }
   div.column:nth-child(3) {
     flex:100%;
@@ -72,5 +73,6 @@ div.sushi {
 @media screen and (min-width: 992px) {
   div.column {
     flex:33.33%;
+    margin-right:10px;
   }
 }
