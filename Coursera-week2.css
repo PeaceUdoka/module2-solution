@@ -1,3 +1,4 @@
+
 * { 
   box-sizing:border-box;
 }
@@ -17,7 +18,8 @@ div.column {
     border:2px solid black;
     background-color:#ccc;
     padding: 0px;
-    flex:33.33%;
+    width:33.33%;
+    margin-right:15px;
 }
 div.content {
     padding:3%;
@@ -42,7 +44,7 @@ div.beef {
     padding:2% 8%;
     font-size:125%;
     font-weight:bold;
-}
+  }
 div.sushi {
     border-left:2px solid black;
     border-bottom:2px solid black;
@@ -54,25 +56,19 @@ div.sushi {
     font-weight:bold;
 }
 /* For mobile phones */
-@media screen and (max-width:767px) {
-  div.row
-   { flex-direction:column;
+@media  (max-width:767px) {
+  div.column{ 
+  	width: 95%;
+  	margin-bottom:10px;
+	}
 }
-}
-@media screen and (min-width: 768px) and (max-width:991px) {
-  /* For tablets: */
-  div.column {
-    flex:50%;
-    margin-right:10px;
-  }
+@media (min-width:768px) and (max-width:991px) {
+  div.column { 
+  	width: 48%;
+  	margin-right: 15px;
+  	margin-bottom: 15px;
+	}
   div.column:nth-child(3) {
-    flex:100%;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  div.column {
-    flex:33.33%;
-    margin-right:10px;
+    width: 96%;
   }
 }
